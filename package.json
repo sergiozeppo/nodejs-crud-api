@@ -1,0 +1,27 @@
+{
+    "name": "nodejs-crud-api",
+    "version": "1.0.0",
+    "description": "Simple CRUD API using in-memory database underneath",
+    "engines": {
+      "node": ">=22.9.0"
+    },
+    "type": "module",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/sergiozeppo/nodejs-crud-api.git"
+    },
+    "keywords": [
+      "nodejs",
+      "crud-api",
+      "sergiozeppo"
+    ],
+    "author": "sergiozeppo",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/sergiozeppo/nodejs-crud-api.git/issues"
+    },
+    "homepage": "https://github.com/sergiozeppo/nodejs-crud-api.git#readme"
+  }
