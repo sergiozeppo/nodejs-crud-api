@@ -3,25 +3,40 @@
     "version": "1.0.0",
     "description": "Simple CRUD API using in-memory database underneath",
     "engines": {
-      "node": ">=22.9.0"
+        "node": ">=22.9.0"
     },
     "type": "module",
     "scripts": {
-      "start": "node index.js"
+        "start": "node index.js"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/sergiozeppo/nodejs-crud-api.git"
+        "type": "git",
+        "url": "git+https://github.com/sergiozeppo/nodejs-crud-api.git"
     },
     "keywords": [
-      "nodejs",
-      "crud-api",
-      "sergiozeppo"
+        "nodejs",
+        "crud-api",
+        "sergiozeppo"
     ],
     "author": "sergiozeppo",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/sergiozeppo/nodejs-crud-api.git/issues"
+        "url": "https://github.com/sergiozeppo/nodejs-crud-api.git/issues"
     },
-    "homepage": "https://github.com/sergiozeppo/nodejs-crud-api.git#readme"
-  }
+    "homepage": "https://github.com/sergiozeppo/nodejs-crud-api.git#readme",
+    "dependencies": {
+        "@types/node": "^22.7.7",
+        "cross-env": "^7.0.3",
+        "dotenv": "^16.4.5",
+        "eslint": "^9.13.0",
+        "nodemon": "^3.1.7",
+        "prettier": "^3.3.3",
+        "ts-loader": "^9.5.1",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.6.3",
+        "uuid": "^10.0.0",
+        "webpack": "^5.95.0",
+        "webpack-cli": "^5.1.4"
+    }
+}
