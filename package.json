@@ -10,7 +10,10 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "start": "node dist/bundle.js",
-    "dev": "nodemon -I --exec node --experimental-specifier-resolution=node  --loader ts-node/esm ./src/index.ts"
+    "dev": "nodemon -I --exec node --experimental-specifier-resolution=node  --loader ts-node/esm ./src/index.ts",
+    "lint:fix": "npm run prettier && npm run eslint",
+    "lint": "eslint . --ext ts --max-warnings 0 & npx prettier . --check",
+    "prettier": "prettier --config .prettierrc \"./**/*.{ts,json,scss}\" --write"
   },
   "repository": {
     "type": "git",
@@ -33,6 +36,8 @@
     "cross-env": "^7.0.3",
     "dotenv": "^16.4.5",
     "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "nodemon": "^3.1.7",
     "prettier": "^3.3.3",
     "ts-loader": "^9.5.1",
