@@ -1,3 +1,2 @@
-const sum = (a: number, b: number) => a + b
-console.log(sum(2, 2))
-console.log('hello crud api')
+const port = process.env.PORT || '3000'
+console.log(`Server is running on http://localhost:${port}`)
