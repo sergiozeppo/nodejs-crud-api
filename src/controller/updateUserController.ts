@@ -2,6 +2,8 @@ import { IncomingMessage, ServerResponse } from 'http'
 import { validate } from 'uuid'
 import { getUserID } from '../functions/getUserID'
 import { updateUser } from '../functions/updateUser'
+import { User } from '../types/types'
+import { isValidRequest } from '../utils/isValidRequest'
 
 export function updateUserController(
   request: IncomingMessage,
@@ -32,8 +34,12 @@ export function updateUserController(
   request.on('end', () => {
     try {
       const { username, age, hobbies } = JSON.parse(data)
+      const isValid = isValidRequest({ username, age, hobbies } as Omit<
+        User,
+        'id'
+      >)
 
-      if (!username || typeof age !== 'number' || !Array.isArray(hobbies)) {
+      if (!isValid) {
         response.writeHead(400, { 'Content-Type': 'application/json' })
         response.end(
           JSON.stringify({
