@@ -2,31 +2,31 @@ import { User } from '../types/types'
 
 export const users: User[] = [
   {
-    id: 'a1b2c3d4',
+    id: 'f8b7e2a0-9d1c-4f3a-b5e8-2c6d1a0b3f47',
     username: 'Alice123',
     age: 25,
     hobbies: ['reading', 'hiking', 'coding'],
   },
   {
-    id: 'e5f6g7h8',
+    id: '1a9d5c3b-7e2f-4a8d-9c1e-6b3a2f8d4c5e',
     username: 'BobTheBuilder',
     age: 30,
     hobbies: ['building', 'gaming'],
   },
   {
-    id: 'i9j0k1l2',
+    id: 'e3c5a1b9-2d8e-4f7c-a6b3-9d1f8e2c3a4b',
     username: 'CharlieBrown',
     age: 20,
     hobbies: ['music', 'drawing', 'sports'],
   },
   {
-    id: 'm3n4o5p6',
+    id: '7b1d9e5a-3c7f-4b9e-8d2a-5f4c3b1a9d6e',
     username: 'DavidTheGamer',
     age: 28,
     hobbies: ['gaming', 'coding', 'movies'],
   },
   {
-    id: 'q7r8s9t0',
+    id: '2c8f4a6d-5e3b-4c1a-9f7e-8d6b5a3c2f1a',
     username: 'EveTheReader',
     age: 32,
     hobbies: ['reading', 'writing', 'traveling'],
