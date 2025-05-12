@@ -16,11 +16,7 @@ export function deleteUserController(
 
   if (isDelete) {
     response.writeHead(204)
-    response.end(
-      JSON.stringify({
-        message: 'User deleted successfully',
-      }),
-    )
+    response.end()
   } else {
     response.writeHead(404, { 'Content-Type': 'application/json' })
     response.end(
