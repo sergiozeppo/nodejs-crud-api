@@ -2,7 +2,10 @@ import { ServerResponse } from 'http'
 import { validate } from 'uuid'
 import { getUserID } from '../functions/getUserID'
 
-export function getUserController(response: ServerResponse, id: string): void {
+export function getUserIDController(
+  response: ServerResponse,
+  id: string,
+): void {
   if (!validate(id)) {
     response.writeHead(400, { 'Content-Type': 'application/json' })
     response.end(JSON.stringify({ message: 'userId is invalid (not uuid)' }))
